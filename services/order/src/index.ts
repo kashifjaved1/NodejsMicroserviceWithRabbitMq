@@ -1,4 +1,4 @@
-import express from '../node_modules1/@types/express';
+import express from 'express';
 import dbConnection from './database/connection';
 import ExpressLogic from './express-logic';
 import config from './config';

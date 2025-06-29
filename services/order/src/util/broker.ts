@@ -1,6 +1,5 @@
-import amqplib, { Channel, ConsumeMessage } from '../../node_modules1/@types/amqplib';
+import amqplib, { Channel, ConsumeMessage } from 'amqplib';
 import config from '../config';
-import ProductService from '../service/order-service';
 import OrderService from '../service/order-service';
 
 const MESSAGE_BROKER_URL = config.MESSAGE_BROKER_URL;

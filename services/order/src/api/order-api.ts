@@ -27,7 +27,7 @@ const OrderAPI = (app: Express, channel: Channel) => {
         PublishMessage(channel, config.ROUTING_KEY, JSON.stringify(payload));        
 
         return res.status(200).json({
-            clients
+            orders
         }).end();
     });
 }
