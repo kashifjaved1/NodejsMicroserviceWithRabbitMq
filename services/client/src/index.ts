@@ -9,10 +9,13 @@ const Start = async() => {
     const app = express();
     
     await dbConnection();
-    
+
     const channel = await CreateChannel();
+    
     await ExpressLogic(app, channel);
     
+    console.log("PORT: ", config.PORT);
+
     app.listen(config.PORT, ()=>{
         console.log(`Client service running at port ${config.PORT}`);
     }).on('error', (err:Error) => {
